@@ -10,9 +10,11 @@
  */
 package com.tomitribe.ee.api;
 
+import javax.ejb.Local;
 import javax.ejb.Remote;
 
 @Remote
+@Local
 public interface IEjbStateless {
 
     String sayHello();

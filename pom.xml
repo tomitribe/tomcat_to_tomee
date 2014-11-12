@@ -23,7 +23,7 @@
   <artifactId>tomcat-to-tomee</artifactId>
   <packaging>pom</packaging>
 
-  <name>JPetStore Demo 6 :: TomEE</name>
+  <name>JPetStore :: TomEE</name>
   <url>http://tomee.apache.org</url>
 
   <modules>

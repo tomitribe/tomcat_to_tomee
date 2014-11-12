@@ -12,7 +12,7 @@
   </parent>
 
   <artifactId>client</artifactId>
-  <name>JPetStore Demo 6 :: TomEE :: Client</name>
+  <name>JPetStore :: TomEE :: Client</name>
 
   <build>
 

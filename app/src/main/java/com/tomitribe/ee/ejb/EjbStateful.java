@@ -16,6 +16,7 @@
  */
 package com.tomitribe.ee.ejb;
 
+import com.tomitribe.ee.api.IEjbSingleton;
 import com.tomitribe.ee.api.IEjbStateful;
 
 import javax.annotation.PostConstruct;
@@ -35,7 +36,7 @@ public class EjbStateful implements IEjbStateful {
     private final AtomicInteger count = new AtomicInteger(0);
 
     @EJB
-    private EjbSingleton singleton;
+    private IEjbSingleton singleton;
 
     @PostConstruct
     public void postConstruct() {

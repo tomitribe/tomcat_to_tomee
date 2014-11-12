@@ -16,9 +16,12 @@
  */
 package com.tomitribe.ee;
 
+import com.tomitribe.ee.api.IEjbSingleton;
+import com.tomitribe.ee.api.IEjbStateful;
+import com.tomitribe.ee.api.IEjbStateless;
 import com.tomitribe.ee.ejb.EjbSingleton;
 import com.tomitribe.ee.ejb.EjbStateful;
-import com.tomitribe.ee.api.IEjbStateful;
+import com.tomitribe.ee.ejb.EjbStateless;
 import org.jboss.arquillian.container.test.api.Deployment;
 import org.jboss.arquillian.junit.Arquillian;
 import org.jboss.arquillian.junit.InSequence;
@@ -42,12 +45,24 @@ public class TestArquillianBasic {
     @Deployment
     public static WebArchive deploy() {
         return ShrinkWrap.create(WebArchive.class, TestArquillianBasic.class.getName() + ".war") //Name is just convenient
-                .addClasses(TestArquillianBasic.class, EjbStateful.class, IEjbStateful.class, EjbSingleton.class) //Add our classes to test
+
+                .addClasses(
+                        EjbStateful.class,
+                        EjbSingleton.class,
+                        EjbStateless.class
+                ) //Add our classes to test, and note that we did not include interfaces...
+
                 .addAsWebInfResource(EmptyAsset.INSTANCE, "beans.xml"); //Turn on CDI
     }
 
     @EJB
     private IEjbStateful stateful;
+
+    @EJB
+    private IEjbStateless stateless;
+
+    @EJB
+    private IEjbSingleton singleton;
 
     @Test
     @InSequence(1)

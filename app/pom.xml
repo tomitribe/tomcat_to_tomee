@@ -33,7 +33,7 @@
   <artifactId>app</artifactId>
   <packaging>war</packaging>
 
-  <name>JPetStore Demo 6 :: TomEE :: App</name>
+  <name>JPetStore :: TomEE :: App</name>
 
   <build>
     <finalName>jpetstore</finalName>
