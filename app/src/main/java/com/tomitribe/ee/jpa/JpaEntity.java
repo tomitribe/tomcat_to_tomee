@@ -16,5 +16,20 @@
  */
 package com.tomitribe.ee.jpa;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
 public class JpaEntity {
+    
+    @Id
+    private Long id;
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(final Long id) {
+        this.id = id;
+    }
 }

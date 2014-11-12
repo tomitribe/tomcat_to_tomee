@@ -16,8 +16,23 @@
  */
 package com.tomitribe.ee.ejb;
 
+import com.tomitribe.ee.api.IEjbStateless;
+
 import javax.ejb.Stateless;
 
+/**
+ * EJB STEP 3 - The @javax.ejb.Stateless bean
+ */
 @Stateless
-public class EjbStateless {
+public class EjbStateless implements IEjbStateless {
+
+    @Override
+    public String sayHello(){
+        return "Not this old example!";
+    }
+
+    @Override
+    public void setState(){
+        throw new IllegalArgumentException("You cannot store state because I am stateless silly!");
+    }
 }

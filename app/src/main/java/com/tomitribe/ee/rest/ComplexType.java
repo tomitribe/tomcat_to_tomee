@@ -16,13 +16,13 @@
  *  *  limitations under the License.
  *
  */
-/**
- * REST STEP 3 - Here is a complex type that is mappable to XML using JAXB
- */
 package com.tomitribe.ee.rest;
 
 import javax.xml.bind.annotation.XmlRootElement;
 
+/**
+ * REST STEP 3 - Here is a complex type that is mappable to XML using JAXB
+ */
 @XmlRootElement
 public class ComplexType {
 

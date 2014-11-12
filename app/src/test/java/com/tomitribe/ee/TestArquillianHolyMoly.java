@@ -24,7 +24,7 @@ package com.tomitribe.ee;
 import com.tomitribe.ee.cdi.CdiPojo;
 import com.tomitribe.ee.ejb.EjbSingleton;
 import com.tomitribe.ee.ejb.EjbStateful;
-import com.tomitribe.ee.ejb.IEjbStateful;
+import com.tomitribe.ee.api.IEjbStateful;
 import com.tomitribe.ee.rest.ComplexType;
 import com.tomitribe.ee.rest.RestResource;
 import com.tomitribe.ee.ws.WebServiceDemo;

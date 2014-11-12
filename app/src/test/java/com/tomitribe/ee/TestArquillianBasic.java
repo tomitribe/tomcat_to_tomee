@@ -18,7 +18,7 @@ package com.tomitribe.ee;
 
 import com.tomitribe.ee.ejb.EjbSingleton;
 import com.tomitribe.ee.ejb.EjbStateful;
-import com.tomitribe.ee.ejb.IEjbStateful;
+import com.tomitribe.ee.api.IEjbStateful;
 import org.jboss.arquillian.container.test.api.Deployment;
 import org.jboss.arquillian.junit.Arquillian;
 import org.jboss.arquillian.junit.InSequence;

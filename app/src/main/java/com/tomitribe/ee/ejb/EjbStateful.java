@@ -14,21 +14,22 @@
  *  See the License for the specific language governing permissions and
  *  limitations under the License.
  */
-/**
- * EJB
- */
 package com.tomitribe.ee.ejb;
+
+import com.tomitribe.ee.api.IEjbStateful;
 
 import javax.annotation.PostConstruct;
 import javax.ejb.EJB;
-import javax.ejb.Remote;
 import javax.ejb.Stateful;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.function.IntBinaryOperator;
 import java.util.function.IntUnaryOperator;
 
+/**
+ * EJB STEP 2 - The @javax.ejb.Stateful bean
+ */
 @Stateful
-public class EjbStateful implements IEjbStateful{
+public class EjbStateful implements IEjbStateful {
 
     private final AtomicInteger id = new AtomicInteger(0);
     private final AtomicInteger count = new AtomicInteger(0);

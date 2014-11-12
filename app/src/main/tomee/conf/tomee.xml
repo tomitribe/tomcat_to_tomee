@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tomee>
+  <!-- see http://tomee.apache.org/containers-and-resources.html -->
+
+  <!-- activate next line to be able to deploy applications in apps -->
+  <!-- <Deployments dir="apps" /> -->
+
+  <Resource id="JmsResourceAdapter" type="ActiveMQResourceAdapter">
+    BrokerXmlConfig = broker:(tcp://someHostName:61616)
+    ServerUrl = tcp://someHostName:61616
+  </Resource>
+
+  <Resource id="JmsConnectionFactory" type="javax.jms.ConnectionFactory">
+    ResourceAdapter = JmsResourceAdapter
+  </Resource>
+
+  <Container id="JmsMdbContainer" ctype="MESSAGE">
+    ResourceAdapter = JmsResourceAdapter
+  </Container>
+
+  <Resource id="JmsQueue" type="javax.jms.Queue"/>
+  <Resource id="JmsTopic" type="javax.jms.Topic"/>
+
+</tomee>

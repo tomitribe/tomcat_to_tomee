@@ -19,6 +19,7 @@ For example, in Intellij IDEA:
  - CDI - Introduce CDI into your application
  - REST - Introduce RESTful WebServices into your application
  - EJB - Introduce Enterprise Java Beans into your application
+ - WEBSERVLET - Annotation based Servlets
  - WEBSERVICE - Introduce SOAP WebServices into your application
  - ARQUILLIAN - Introduce Arquillian testing into your application
 

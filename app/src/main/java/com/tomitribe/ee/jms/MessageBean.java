@@ -20,6 +20,9 @@ import javax.ejb.MessageDriven;
 import javax.jms.Message;
 import javax.jms.MessageListener;
 
+/**
+ * JMS STEP 3 - Here is a complex type that is mappable to XML using JAXB
+ */
 @MessageDriven
 public class MessageBean  implements MessageListener {
 

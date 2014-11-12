@@ -8,19 +8,12 @@
  * U.S. Copyright Office.
  * <p/>
  */
-package com.tomitribe.ee.ejb;
+package com.tomitribe.ee.api;
 
 import javax.ejb.Remote;
 
 @Remote
-public interface IEjbStateful {
-    int getId();
+public interface IEjbSingleton {
 
-    int get();
-
-    int incrementAndGet();
-
-    int decrementAndGet();
-
-    int getAndIncrement();
+    int getNextId();
 }

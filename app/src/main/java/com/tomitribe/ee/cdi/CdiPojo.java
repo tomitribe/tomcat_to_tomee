@@ -14,14 +14,22 @@
  *  See the License for the specific language governing permissions and
  *  limitations under the License.
  */
-/**
- * CDI STEP 2 - Create a pojo and optionally give it a name.
- */
 package com.tomitribe.ee.cdi;
 
 import java.io.Serializable;
 
-@javax.inject.Named("cdipojo") //This allows use in Unified Expression Language (EL)
+/**
+ * CDI STEP 2 - Create a pojo and optionally give it a name.
+ *
+ * @Dependent - Bound to the scope of the binding object
+ *
+ * @RequestScoped
+ * @SessionScoped
+ * @ApplicationScoped
+ * @ConversationScoped
+ *
+ */
+@javax.inject.Named("cdipojo") //This optional annotation allows use in Unified Expression Language (EL)
 public class CdiPojo implements Serializable {
 
     private String absolutelyAnything = "Something";

@@ -14,21 +14,31 @@
  *  See the License for the specific language governing permissions and
  *  limitations under the License.
  */
-/**
- * EJB Step 1 - The @javax.ejb.Singleton
- */
 package com.tomitribe.ee.ejb;
+
+import com.tomitribe.ee.api.IEjbSingleton;
 
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
 import javax.annotation.Resource;
-import javax.ejb.*;
+import javax.ejb.Asynchronous;
+import javax.ejb.Lock;
+import javax.ejb.LockType;
+import javax.ejb.Singleton;
+import javax.ejb.Startup;
+import javax.ejb.Timeout;
+import javax.ejb.Timer;
+import javax.ejb.TimerConfig;
+import javax.ejb.TimerService;
 import java.util.Random;
 import java.util.concurrent.atomic.AtomicInteger;
 
+/**
+ * EJB STEP 1 - The @javax.ejb.Singleton
+ */
 @Singleton
 @Startup
-public class EjbSingleton {
+public class EjbSingleton implements IEjbSingleton {
 
     private static final AtomicInteger id = new AtomicInteger(0);
 
@@ -86,6 +96,7 @@ public class EjbSingleton {
             "This is annoying I bet!",
     };
 
+    @Override
     public int getNextId() {
         return id.incrementAndGet();
     }

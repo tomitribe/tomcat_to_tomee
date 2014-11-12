@@ -74,6 +74,10 @@ public class FormMain implements ActionListener {
         }
     }
 
+    /**
+     * Called from the thread started in the {@link com.tomitribe.jpetstore.client.ejb.ClientEJB#callEJB(FormMain)} method
+     * @param ct ComplexType
+     */
     public void setComplexType(final ComplexType ct) {
 
         /**

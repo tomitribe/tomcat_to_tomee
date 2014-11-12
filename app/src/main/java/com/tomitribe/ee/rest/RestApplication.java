@@ -14,14 +14,6 @@
  *  See the License for the specific language governing permissions and
  *  limitations under the License.
  */
-/**
- * REST STEP 2 - Representational state transfer Service Application
- *
- * Required in multipurpose applications to separate name space.
- * A standalone API would not need this, but it makes for good
- * practice, should you ever need to change the purpose of the app.
- *
- */
 package com.tomitribe.ee.rest;
 
 import javax.ws.rs.ApplicationPath;
@@ -30,6 +22,14 @@ import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
+/**
+ * REST STEP 2 - Representational state transfer Service Application
+ *
+ * Required in multipurpose applications to separate web namespace.
+ * A standalone API would not need this, but it makes for good
+ * practice should you ever need to change the purpose of the app.
+ *
+ */
 @ApplicationPath("/api")
 public class RestApplication extends Application {
 

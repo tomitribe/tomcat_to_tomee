@@ -14,10 +14,6 @@
  *  See the License for the specific language governing permissions and
  *  limitations under the License.
  */
-/**
- * REST Step 1 - Representational state transfer Service.
- * Just add some rest annotations to a Pojo, the @Inject is just icing on the cake.
- */
 package com.tomitribe.ee.rest;
 
 import com.tomitribe.ee.cdi.CdiPojo;
@@ -30,6 +26,10 @@ import javax.ws.rs.Produces;
 
 import static javax.ws.rs.core.MediaType.APPLICATION_JSON;
 
+/**
+ * REST STEP 1 - Representational state transfer Service.
+ * Just add some rest annotations to a Pojo, the @Inject is just icing on the cake.
+ */
 @Path("/myrest")
 public class RestResource {
 
