@@ -1,10 +1,10 @@
-# JPetStore 6 on Apache TomEE
-JPetStore 6 is a full web application built on top of MyBatis 3, Spring 3 and Stripes. It is available for downloading in the downloads section of MyBatis project site. See: http://www.mybatis.org/spring/sample.html
+# MyBatis JPetStore 6 on Apache TomEE
+MyBatis JPetStore 6 is a full web application built on top of MyBatis 3, Spring 3 and Stripes. It is available for downloading in the downloads section of MyBatis project site. See: http://www.mybatis.org/spring/sample.html
 
 This version has been modified to include Java EE 6 features in order to demonstrate a transition from [Apache Tomcat 7.x](http://tomcat.apache.org/) to [Apache TomEE](http://tomee.apache.org/index.html)
 It is in no way a best practice application in regards to Java EE, rather a fully working pre-EE application running within an EE enabled environment.
 
-There are several trails that you can follow step by step. Just use your IDE to search for all steps in all files.
+There are several trails that you can follow in a step by step trail. Just use your IDE to search for all steps in all files.
 
 For example, in Intellij IDEA:  
  - Press CTRL+SHIFT+F and enter the trail you wish to follow, i.e 'TOMEE STEP' or 'CDI STEP' 

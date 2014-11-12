@@ -6,8 +6,8 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <artifactId>jpetstore-tomee</artifactId>
-    <groupId>org.mybatis</groupId>
+    <artifactId>tomcat-to-tomee</artifactId>
+    <groupId>org.tomitribe</groupId>
     <version>6.0.2-SNAPSHOT</version>
   </parent>
 

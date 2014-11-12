@@ -18,9 +18,9 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>org.mybatis</groupId>
+  <groupId>org.tomitribe</groupId>
   <version>6.0.2-SNAPSHOT</version>
-  <artifactId>jpetstore-tomee</artifactId>
+  <artifactId>tomcat-to-tomee</artifactId>
   <packaging>pom</packaging>
 
   <name>JPetStore Demo 6 :: TomEE</name>
