@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <artifactId>jpetstore-tomee</artifactId>
+    <groupId>org.mybatis</groupId>
+    <version>6.0.2-SNAPSHOT</version>
+  </parent>
+
+  <artifactId>client</artifactId>
+  <name>JPetStore Demo 6 :: TomEE :: Client</name>
+
+  <build>
+
+  </build>
+
+  <dependencies>
+
+    <dependency>
+      <groupId>org.mybatis</groupId>
+      <artifactId>app</artifactId>
+      <version>${project.version}</version>
+      <classifier>classes</classifier>
+    </dependency>
+
+    <dependency>
+      <groupId>org.apache.cxf</groupId>
+      <artifactId>cxf-rt-frontend-jaxrs</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>org.apache.cxf</groupId>
+      <artifactId>cxf-rt-rs-extension-providers</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>org.codehaus.jettison</groupId>
+      <artifactId>jettison</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>com.intellij</groupId>
+      <artifactId>forms_rt</artifactId>
+    </dependency>
+
+  </dependencies>
+
+
+</project>
