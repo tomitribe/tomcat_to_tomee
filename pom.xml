@@ -44,25 +44,25 @@
 
   <scm>
     <url>http://github.com/mybatis/jpetstore</url>
-    <connection>scm:git:ssh://github.com/AndyGee/jpetstore-6.git</connection>
-    <developerConnection>scm:git:git+ssh://git@github.com:AndyGee/jpetstore-6.git</developerConnection>
+    <connection>scm:git:ssh://github.com/tomitribe/tomcat_to_tomee</connection>
+    <developerConnection>scm:git:git+ssh://git@github.com:tomitribe/tomcat_to_tomee</developerConnection>
     <tag>HEAD</tag>
   </scm>
 
   <issueManagement>
     <system>GitHub Issue Management</system>
-    <url>https://github.com/AndyGee/jpetstore-6/issues</url>
+    <url>https://github.com/tomitribe/tomcat_to_tomee/issues</url>
   </issueManagement>
 
   <ciManagement>
     <system>Travis CI</system>
-    <url>https://http://ci.tomitribe.com/jpetstore-6</url>
+    <url>https://http://ci.tomitribe.com/tomcat_to_tomee</url>
   </ciManagement>
 
   <distributionManagement>
     <site>
       <id>github</id>
-      <url>gitsite:git@github.com/AndyGee/jpetstore-6.git</url>
+      <url>gitsite:git@github.com/tomitribe/tomcat_to_tomee.git</url>
     </site>
   </distributionManagement>
 
