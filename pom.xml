@@ -34,6 +34,8 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.build.reportEncoding>UTF-8</project.build.reportEncoding>
+    <maven.compiler.target>1.6</maven.compiler.target>
+    <maven.compiler.source>1.6</maven.compiler.source>
     <version.spring>4.0.5.RELEASE</version.spring>
     <version.tomee>1.7.1</version.tomee>
     <version.openejb>4.7.1</version.openejb>
