@@ -35,6 +35,8 @@ public class RestResource {
 
     /**
      * CDI STEP 7 - Inject to your hearts content.
+     * This is the end of the CDI trail but only the beginning
+     * of what you can do with injected resources.
      */
     @Inject
     private CdiPojo cdiPojo;
@@ -51,7 +53,7 @@ public class RestResource {
 
     /**
      * REST STEP 4 - Expose something complex, because we are not only going to need
-     * native types. Look at the class for some detail of what we are returning.
+     * native types. Step 3 looked at the class for some detail on what we are returning.
      */
     @Path("complex")
     @GET

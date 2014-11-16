@@ -82,7 +82,7 @@ public class FormMain implements ActionListener {
 
         /**
          * REST STEP 6 - Nothing to do with REST here, but a nice example
-         * of ensuring cross thread safety.
+         * of ensuring cross thread safety on returning my complex object.
          */
 
         final FormMain fm = FormMain.this;
@@ -109,6 +109,9 @@ public class FormMain implements ActionListener {
              * Just going to display it here in our form for you to see.
              *
              * This is the end of the REST trail, have fun with it!
+             *
+             * To test this just fire up the web-application in TomEE - After
+             * the sever has started fire up the client-application.
              */
             final Document document = this.txt_view.getDocument();
             document.insertString(0, "\n", null);
