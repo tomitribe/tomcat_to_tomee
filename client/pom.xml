@@ -21,7 +21,7 @@
   <dependencies>
 
     <dependency>
-      <groupId>org.mybatis</groupId>
+      <groupId>org.tomitribe</groupId>
       <artifactId>app</artifactId>
       <version>${project.version}</version>
       <classifier>classes</classifier>

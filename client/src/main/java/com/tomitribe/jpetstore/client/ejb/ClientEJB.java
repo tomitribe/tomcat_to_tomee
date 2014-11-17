@@ -10,7 +10,7 @@
  */
 package com.tomitribe.jpetstore.client.ejb;
 
-import com.tomitribe.ee.ejb.IEjbStateful;
+import com.tomitribe.ee.api.IEjbStateful;
 import com.tomitribe.jpetstore.client.ui.FormMain;
 
 import javax.naming.InitialContext;

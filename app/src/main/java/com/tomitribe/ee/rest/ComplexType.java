@@ -23,7 +23,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 /**
  * REST STEP 3 - Here is a complex type that is mappable to XML using JAXB
  */
-@XmlRootElement
+@XmlRootElement(namespace = "http://www.tomitribe.com/complex")
 public class ComplexType {
 
     private String name;

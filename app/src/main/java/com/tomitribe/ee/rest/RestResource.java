@@ -25,6 +25,7 @@ import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 
 import static javax.ws.rs.core.MediaType.APPLICATION_JSON;
+import static javax.ws.rs.core.MediaType.APPLICATION_XML;
 
 /**
  * REST STEP 1 - Representational state transfer Service.
@@ -57,7 +58,7 @@ public class RestResource {
      */
     @Path("complex")
     @GET
-    @Produces({APPLICATION_JSON})
+    @Produces({APPLICATION_JSON, APPLICATION_XML})
     public ComplexType getComplexType() {
         final ComplexType ct = new ComplexType();
 

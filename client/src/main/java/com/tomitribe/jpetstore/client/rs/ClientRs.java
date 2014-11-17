@@ -60,7 +60,7 @@ public class ClientRs {
                     providers.add(new JSONProvider());
 
                     final WebClient webClient = WebClient.create(uri.toASCIIString(), providers);
-                    webClient.accept(MediaType.APPLICATION_JSON);
+                    webClient.accept(MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML);
 
                     ct = webClient.path("api/myrest/complex").get(ComplexType.class);
 

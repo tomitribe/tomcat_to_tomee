@@ -130,7 +130,7 @@ public class FormMain implements ActionListener {
         final Runnable r = new Runnable() {
             @Override
             public void run() {
-                fm.setEjbResult(i);
+                fm.safeSetEjbResult(i);
             }
         };
 
