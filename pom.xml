@@ -200,6 +200,7 @@
       <groupId>org.apache.openejb</groupId>
       <artifactId>arquillian-tomee-embedded</artifactId>
       <version>${version.tomee}</version>
+      <scope>test</scope>
       <exclusions>
         <exclusion>
           <artifactId>commons-logging</artifactId>
@@ -210,6 +211,7 @@
 
     <!--
     TOMEE STEP 5 - Just provides some useful util classes for testing
+    You will see this in use on the Arquillian trail.
 
     Optional.
     -->
@@ -218,6 +220,12 @@
       <artifactId>ziplock</artifactId>
       <version>${version.tomee}</version>
       <scope>test</scope>
+      <exclusions>
+        <exclusion>
+          <artifactId>jaxb-impl</artifactId>
+          <groupId>com.sun.xml.bind</groupId>
+        </exclusion>
+      </exclusions>
     </dependency>
 
     <!--
@@ -301,6 +309,7 @@
       <groupId>javax.servlet</groupId>
       <artifactId>jstl</artifactId>
       <version>1.2</version>
+      <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>javax.servlet</groupId>
@@ -344,11 +353,11 @@
     well that's step 1 covered already - Well done!
 
     If not then pop over to http://tomee.apache.org/documentation.html
-    and follow the tutorial for IDE of choice.
+    and follow the tutorial for your IDE of choice.
 
     TOMEE STEP 2 - Introduce the JavaEE API
 
-    We are going to be writing Java EE6 components. Therefore,
+    We are going to be writing Java EE6 components. Therefore
     we need to add the Java EE6 API to the classpath so we can
     compile these components. The container provides this jar,
     so a scope of provided is OK.

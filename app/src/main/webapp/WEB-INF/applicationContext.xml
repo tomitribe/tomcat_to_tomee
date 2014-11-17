@@ -38,8 +38,8 @@
   </bean>
 
   <!--
-  CDI STEP 3 - Only really required for this application, as Spring still has it's fingers in the pie.
-  This just ensures that my namespace is scanned by Spring
+  CDI STEP 3 - Only really required for this application, as Spring still is in charge.
+  This just ensures that my namespace is scanned by Spring as there is no beans.xml
   -->
   <!-- enable component scanning and autowire (beware that this does not enable mapper scanning!) -->
   <context:component-scan base-package="org.mybatis.jpetstore.service,com.tomitribe"/>

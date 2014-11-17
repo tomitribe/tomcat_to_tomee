@@ -88,12 +88,21 @@ public class TestArquillianHolyMoly {
                 .up()
                 .exportAsString();
 
-        return ShrinkWrap.create(WebArchive.class, TestArquillianHolyMoly.class.getName() + ".war") //Name is just convenient
-                .addClasses(WebServiceDemo.class, RestResource.class, ComplexType.class, CdiPojo.class, EjbStateful.class, IEjbStateful.class, EjbSingleton.class) //Add our classes to test
+        return ShrinkWrap.create(WebArchive.class, TestArquillianHolyMoly.class.getName()
+                + ".war") //Name is just convenient
+
+                .addClasses(
+                        WebServiceDemo.class,
+                        RestResource.class,
+                        ComplexType.class,
+                        CdiPojo.class,
+                        EjbStateful.class,
+                        IEjbStateful.class,
+                        EjbSingleton.class) //Add our classes to test
 
                 .addAsWebInfResource(EmptyAsset.INSTANCE, "beans.xml") //Turn on CDI
 
-                .addAsWebInfResource(EmptyAsset.INSTANCE, "ejb-jar.xml") //Turn on CDI
+                .addAsWebInfResource(EmptyAsset.INSTANCE, "ejb-jar.xml") //Turn on scanning
 
                 .setWebXML(new StringAsset(xml));
     }
@@ -145,7 +154,9 @@ public class TestArquillianHolyMoly {
 
         try {
 
-            final HttpResponse response = httpClient.execute(new HttpGet(new URI(url.toExternalForm() + "api/myrest")));
+            final HttpResponse response = httpClient.execute(
+                    new HttpGet(new URI(url.toExternalForm() + "api/myrest")));
+
             final String body = asString(response);
             Assert.assertEquals("Something", body);
 

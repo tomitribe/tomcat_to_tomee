@@ -16,7 +16,13 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 -->
-<!--TOMEE STEP 6 - WebApp 3.0 - Sure just EE6, not really TomEE but let's get up to date while we are here-->
+<!--
+TOMEE STEP 6 - WebApp 3.0 - Sure just EE6, not really TomEE but let's
+get up to date while we are here. 3.1 is EE7
+
+This is the end of the TomEE trail. You are ready to roll with EE6...
+Try the CDI or REST trail.
+-->
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xmlns="http://java.sun.com/xml/ns/javaee"
          xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
