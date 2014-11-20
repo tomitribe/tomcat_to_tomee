@@ -17,7 +17,8 @@
 /**
  * ARQUILLIAN STEP 10 - Our second, and very complex, Arquillian test.
  *
- *
+ * This is the end of the Arquillian trail. Time to bury your head
+ * into the extensive Arquillian documentation and examples.
  */
 package com.tomitribe.ee;
 

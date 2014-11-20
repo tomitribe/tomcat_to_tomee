@@ -44,7 +44,8 @@ public class TestArquillianBasic {
 
     @Deployment
     public static WebArchive deploy() {
-        return ShrinkWrap.create(WebArchive.class, TestArquillianBasic.class.getName() + ".war") //Name is just convenient
+        return ShrinkWrap.create(WebArchive.class, TestArquillianBasic.class.getName() + ".war")
+        //Name is just convenient
 
                 .addClasses(
                         EjbStateful.class,
