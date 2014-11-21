@@ -23,6 +23,7 @@ public class ClientEJB {
 
     public void callEJB(final FormMain formMain) {
         final Thread t = new Thread() {
+            @Override
             public void run() {
 
                 int i = -1;

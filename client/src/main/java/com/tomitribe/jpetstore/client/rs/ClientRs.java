@@ -43,6 +43,7 @@ public class ClientRs {
     public void callComplexType(final FormMain formMain) {
 
         final Thread t = new Thread() {
+            @Override
             public void run() {
 
                 ComplexType ct = null;

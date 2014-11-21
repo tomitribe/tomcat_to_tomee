@@ -117,7 +117,6 @@ a.Button:hover {
     background-color: #000;
     color: #fff;
     line-height: 9ex;
-    voice-family: "\"}\"";
     voice-family: inherit;
     height: 9ex;
 }
@@ -141,7 +140,6 @@ body > #Logo {
     font-family: helvetica, tahoma, arial, verdana, sans-serif;
     text-align: center;
     line-height: 9ex;
-    voice-family: "\"}\"";
     voice-family: inherit;
     height: 9ex;
 }
@@ -154,9 +152,6 @@ body > #Logo {
 
 body > #Menu {
     height: 9ex;
-}
-
-{
 }
 
 #Search {
@@ -172,7 +167,6 @@ body > #Menu {
     background-color: #000;
     color: #eaac00;
     line-height: 9ex;
-    voice-family: "\"}\"";
     voice-family: inherit;
     height: 9ex;
 }
@@ -207,7 +201,6 @@ body > #Search {
     background-color: #000;
     color: #fff;
     line-height: 9ex;
-    voice-family: "\"}\"";
     voice-family: inherit;
     height: 9ex;
 }
@@ -228,7 +221,6 @@ body > #PoweredBy {
     background-color: #000;
     color: #fff;
     line-height: 9ex;
-    voice-family: "\"}\"";
     voice-family: inherit;
     height: 9ex;
 }
