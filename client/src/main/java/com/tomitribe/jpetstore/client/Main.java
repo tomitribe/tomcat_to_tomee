@@ -37,7 +37,7 @@ public class Main {
 
     private static void gui() {
         final JFrame frame = new JFrame("JPetstore Client");
-        final JPanel main = new FormMain().getMain();
+        final JComponent main = new FormMain().$$$getRootComponent$$$();
         final Dimension s = new Dimension(800, 600);
         main.setMinimumSize(s);
         main.setPreferredSize(s);

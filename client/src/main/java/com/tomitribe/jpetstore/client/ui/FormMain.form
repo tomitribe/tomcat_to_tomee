@@ -22,6 +22,7 @@
             </constraints>
             <properties>
               <text value="Complex REST Call"/>
+              <toolTipText value="Asynchronous call to retrieve a REST call"/>
             </properties>
           </component>
           <component id="11e30" class="javax.swing.JTextField" binding="txt_host">
@@ -56,7 +57,9 @@
             <children>
               <component id="5c568" class="javax.swing.JEditorPane" binding="txt_view">
                 <constraints/>
-                <properties/>
+                <properties>
+                  <text value="[Make sure the server is running first, then click on a button to see the result]"/>
+                </properties>
               </component>
             </children>
           </scrollpane>
@@ -68,6 +71,7 @@
         </constraints>
         <properties>
           <text value="Remote EJB Call"/>
+          <toolTipText value="Asynchronous call to retrieve an EJB call"/>
         </properties>
       </component>
     </children>
