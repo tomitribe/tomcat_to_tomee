@@ -89,5 +89,7 @@ public class TestArquillianBasic {
     @InSequence(3)
     public void test3() throws IOException {
         //Assert.assertEquals("Value is not 1", 1, stateful.decrementAndGet());
+        final int nextId = singleton.getNextId();
+        Assert.assertTrue(nextId > 0);
     }
 }

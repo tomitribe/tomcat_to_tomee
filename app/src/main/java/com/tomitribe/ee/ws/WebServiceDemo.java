@@ -21,7 +21,7 @@ import javax.jws.WebService;
 @WebService
 public class WebServiceDemo {
 
-    public String getMessage(){
+    public String getMessage() {
         return "Halo, cool game";
     }
 }
