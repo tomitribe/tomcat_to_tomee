@@ -1,0 +1,21 @@
+= Apache Tomcat to Apache TomEE in 1-n Steps
+
+image::tt.andy.jpg[Andy,250,250,role="right"]
+
+Apache Tomcat is a mainstay Java Application Server. Apache TomEE is a sister project at the Apache Software foundation that adds the entire EE Oracle certified Web Profile to this extremely well known platform. Now all you need to do is make the transition - Step one.
+
+Watch the transition of an established application that runs within a standard Tomcat environment into the EE world of Apache TomEE by using a visually descriptive step-by-step approach. The accompanying project and slides can be found here: https://github.com/tomitribe/tomcat_to_tomee
+
+Enable the gradual addition of virtually every single EE technology to your application through following various trails such as CDI, RESTful WebServices, EJBs, WebServlets and SOAP Services. To complete the transition viewers will also be introduced to Arquillian driven testing and the advantages this brings in regards to ensuring application stability an any EE platform.
+
+= Summary
+
+The accompanying talk project and slides can be found here: https://github.com/tomitribe/tomcat_to_tomee
+
+Let me take a small step back from the cutting edge and focus on a real world scenario that many developers face today. Legacy Tomcat production systems are often running applications designed way before frameworks existed and when J2EE was a long way away from today's Java EE. Things have certainly moved on and new JavaEE technologies, particularly WebService APIs and CDI, are becoming central to just about every organizations needs.
+
+So does this mean a huge investment in a new infrastructure and complete re-development of existing applications is required, or is there a more simple solution?
+
+The "Apache Tomcat to Apache TomEE in 1-n Steps" talk is designed as a proof of concept doorway to the JavaEE world. It takes the real world non-EE based example "MyBatis JPetStore 6" and demonstrates how TomEE can be used as a drop in replacement for an existing Tomcat server constellation. Here the term "doorway" is intended to convey the possibility of a gentle, rather than a forced, transition to using JavaEE technologies in legacy applications in which the developer has complete control.
+
+The talk is open to anyone interested in beginning JavaEE, but with a particular focus towards existing Apache Tomcat users looking to enter a path towards JavaEE development.
