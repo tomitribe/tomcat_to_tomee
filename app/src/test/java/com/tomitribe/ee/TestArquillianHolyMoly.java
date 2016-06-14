@@ -16,16 +16,16 @@
  */
 /**
  * ARQUILLIAN STEP 10 - Our second, and very complex, Arquillian test.
- *
+ * <p>
  * This is the end of the Arquillian trail. Time to bury your head
  * into the extensive Arquillian documentation and examples.
  */
 package com.tomitribe.ee;
 
+import com.tomitribe.ee.api.IEjbStateful;
 import com.tomitribe.ee.cdi.CdiPojo;
 import com.tomitribe.ee.ejb.EjbSingleton;
 import com.tomitribe.ee.ejb.EjbStateful;
-import com.tomitribe.ee.api.IEjbStateful;
 import com.tomitribe.ee.rest.ComplexType;
 import com.tomitribe.ee.rest.RestResource;
 import com.tomitribe.ee.ws.WebServiceDemo;
@@ -53,6 +53,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 
 import javax.ws.rs.core.Application;
+import java.io.Closeable;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.URI;
@@ -142,7 +143,7 @@ public class TestArquillianHolyMoly {
             Assert.assertEquals(expected, body.replaceAll("ns[0-9]*", "ns"));
 
         } finally {
-            httpClient.close();
+            close(httpClient);
         }
     }
 
@@ -162,7 +163,7 @@ public class TestArquillianHolyMoly {
             Assert.assertEquals("Something", body);
 
         } finally {
-            httpClient.close();
+            close(httpClient);
         }
     }
 
@@ -171,7 +172,15 @@ public class TestArquillianHolyMoly {
         try {
             return IO.slurp(in);
         } finally {
-            in.close();
+            close(in);
+        }
+    }
+
+    private static void close(final Closeable closeable) {
+        try {
+            closeable.close();
+        } catch (final IOException e) {
+            //no-op
         }
     }
 }
