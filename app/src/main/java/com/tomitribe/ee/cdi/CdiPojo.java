@@ -38,6 +38,7 @@ public class CdiPojo implements Serializable {
         return absolutelyAnything;
     }
 
+    @SuppressWarnings("unused")
     public void setAbsolutelyAnything(final String absolutelyAnything) {
         this.absolutelyAnything = absolutelyAnything;
     }

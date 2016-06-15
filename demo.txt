@@ -1,0 +1,9 @@
+dirs
+mybatis
+war
+tomee startup
+tomee deploy
+tomee undeploy
+app
+EjbSingleton
+arquillian

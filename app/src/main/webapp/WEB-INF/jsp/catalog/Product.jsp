@@ -1,3 +1,4 @@
+<%--@elvariable id="cdipojo" type="com.tomitribe.ee.cdi.CdiPojo"--%>
 <%@ include file="../common/IncludeTop.jsp" %>
 
 <jsp:useBean id="catalog"
