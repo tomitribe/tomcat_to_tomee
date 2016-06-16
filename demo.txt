@@ -4,6 +4,9 @@ war
 tomee startup
 tomee deploy
 tomee undeploy
-app
-EjbSingleton
+IDE app run
+IDE CDI show
+IDE CDI breakpoint
+EjbSingleton - Bug?
+REST Client
 arquillian
